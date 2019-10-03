@@ -3,8 +3,9 @@ from tkinter import ttk
 
 
 class ViewHallo(tk.Frame):
-    def __init__(self, parent):
+    def __init__(self, parent, **kw):
         super.__init__(parent)
+        super().__init__(**kw)
 
 
 class MyApplication(tk.Tk):
