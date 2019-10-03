@@ -1,8 +1,17 @@
-from tkinter import *
+import tkinter as tk
 from tkinter import ttk
 
-root = Tk()
 
-label = Label(root, text='Hello World')
-label.pack()
-root.mainloop()
+class ViewHallo(tk.Frame):
+    def __init__(self, parent):
+        super.__init__(parent)
+
+
+class MyApplication(tk.Tk):
+    def __init__(self, *args, **kwargs):
+        super().__init__(*args, *kwargs)
+
+
+if __name__ == 'main':
+    app = MyApplication()
+    app.mainloop()
